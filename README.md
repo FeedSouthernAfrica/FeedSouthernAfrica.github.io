@@ -1,2 +1,2 @@
-# FeedSouthernAfrica.github.io
-Feed Southern Africa Volunteer Project website
+# Feed-Southern-Africa
+Feed southern Africa static website
