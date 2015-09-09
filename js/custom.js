@@ -28,16 +28,36 @@ document.getElementById("nav").innerHTML =
     '</div>'
 ;
 
+/* Facebook like page*/
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.4&appId=1534300023482847";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
 /* Footer */
-
-
 
 document.getElementById("footer").innerHTML = '<div class="container">'+
     '<div class="row">'+
-'<div class="col-lg-12 text-center">'+
+    '<div class="col-lg-6 text-center" style="padding-top:1% ">'+
+    '<div  class="fb-page" data-href="https://www.facebook.com/pages/Feed-Southern-Africa/1095310450480809?fref=ts" data-width="180" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">' +
+    '<div class="fb-xfbml-parse-ignore">' +
+    '<blockquote cite="https://www.facebook.com/pages/Feed-Southern-Africa/1095310450480809?fref=ts">' +
+    '<a href="https://www.facebook.com/pages/Feed-Southern-Africa/1095310450480809?fref=ts">Feed Southern Africa' +
+    '</a>' +
+    '</blockquote>' +
+    '</div>' +
+    '</div>' +
+    '</div>'+
+'<div class="col-lg-6 text-center">'+
 '<p style="text-align: center"> ' +
     '&copy;  ' + new Date().getFullYear() + ' Feed Southern Africa. All rights reserved.' +
     '</p>'+
 '</div>'+
+
 '</div>'+
 '</div>';
