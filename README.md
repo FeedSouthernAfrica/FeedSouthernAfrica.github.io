@@ -6,7 +6,7 @@ FeedSouthernAfrica.github.io
 * see [CNAME](https://github.com/FeedSouthernAfrica/FeedSouthernAfrica.github.io/blob/master/CNAME) file
 
 ## Technology
-* CSS frameworks, e.g. BootStrap
+* CSS framework: BootStrap
 * JavaScript
 * HTML5
 * [GitHub Pages](http://pages.github.com/)
