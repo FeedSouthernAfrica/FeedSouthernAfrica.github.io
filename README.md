@@ -10,7 +10,7 @@ FeedSouthernAfrica.github.io
 * JavaScript
 * HTML5
 * [GitHub Pages](http://pages.github.com/)
-* [robots.txt](https://github.com/username/username.github.io/blob/master/robots.txt)
+* [robots.txt](https://github.com/FeedSouthernAfrica/FeedSouthernAfrica.github.io/blob/master/robots.txt)
 
 
 ## Contact
