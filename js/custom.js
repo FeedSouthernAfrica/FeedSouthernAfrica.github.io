@@ -45,8 +45,8 @@ document.getElementById("nav").innerHTML =
     '<li class="dropdown">'+
     '<a href="/gallery" data-toggle="dropdown" class="dropdown-toggle">Gallery <b class="caret"></b></a>'+
     '<ul class="dropdown-menu" id="gallery">'+
-    '<li><a href="/gallery" onclick="jk(\"program-1\", \"/gallery/program-1/index.html\" )" id="program-1" >Program-1</a></li>'+
-    '<li><a href="/gallery" onclick="jk(\"program-2\", \"/gallery/program-2/index.html\" )" id="program-2" >Program-1</a></li>'+
+    '<li><a href="/gallery/" onclick="IFrameScroll(\'/gallery/program-1.html\')">Program-1</a></li>'+
+    '<li><a href="/gallery/" onclick="IFrameScroll(\'//gallery/program-2.html\')">Program-2</a></li>'+
     '</ul>'+
     '</li>'+
     '</ul>'+
@@ -81,12 +81,6 @@ function IFrameScroll(link){
     window.galleryIframe.location=link;
     window.location.hash='galleryIframe';
 }
-
-function jk(id, link){
-    document.getElementById(id).click(function () {
-        IFrameScroll(link);
-}
-
 
 
 
