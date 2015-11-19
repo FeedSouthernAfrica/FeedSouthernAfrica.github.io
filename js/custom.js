@@ -83,10 +83,12 @@ function IFrameScroll(link){
 }
 
 
-$('#program-1').click(function () {
+document.getElementById('#program-1').click(function () {
     IFrameScroll('/gallery/program-1/index.html');
+    return false;
 });
 
-$('#program-2').click(function () {
+document.getElementById('#program-2').click(function () {
     IFrameScroll('/gallery/program-2/index.html');
+    return false;
 });
