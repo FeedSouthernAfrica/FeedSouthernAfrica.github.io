@@ -1,0 +1,81 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua--compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Photo gallery" />
+    <meta name="author" content="Haythem Sahbani" />
+    <meta name="keywords" content="volunteer, South Africa, Charity, Children, photo, gallery, image, animal, farm" />
+    <title>Gallery</title>
+
+
+    <!-- Compiled and minified  bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <!-- GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="brand">Gallery</div>
+
+<!-- Navigation Loaded from custom.js-->
+<nav class="navbar navbar-default " role="navigation" id="nav"></nav>
+
+<div class="container">
+
+    <div class="box">
+        <div class="row center program-link">
+            <div class="col-lg-6" >
+                <a  href="javascript:void(0)" onclick="IFrameScroll('/program-1')" >
+                    <h4 >Program-1</h4>
+                </a>
+            </div>
+
+            <div class="col-lg-6" >
+                <a href="javascript:void(0)" onclick="IFrameScroll('/program-2')">
+                    <h4 >Program-2</h4>
+                </a>
+            </div>
+
+        </div>
+        <hr class="hr-900" />
+        <div class="row center" >
+            <div class="col-lg-12" >
+                <iframe class="gallery-iframe" allowtransparency="true" src="program-1.html" name="galleryIframe" frameborder="no" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer loaded from custom.js -->
+<footer id="footer"></footer>
+
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- CUSTOM SCRIPTS  -->
+<script src="../js/custom.js"></script>
+<script type="text/javascript">
+    function IFrameScroll(link){
+        window.galleryIframe.location=link;
+        window.location.hash='galleryIframe'
+    }
+</script>
+
+</body>
+
+</html>

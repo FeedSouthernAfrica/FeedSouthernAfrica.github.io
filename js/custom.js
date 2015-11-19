@@ -10,13 +10,12 @@
 
 /* Google analytics */
 
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-67287154-1', 'auto');
-  ga('send', 'pageview');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-67287154-1', 'auto');
+ga('send', 'pageview');
 
 
 /* Navigation bar */
@@ -39,13 +38,19 @@ document.getElementById("nav").innerHTML =
     '<ul class="nav navbar-nav navbar-right">'+
     '<li><a href="/">HOME</a></li>'+
     '<li><a href="/about">ABOUT</a></li>'+
-    '<li><a href="/program_description">THE PROGRAM</a></li>'+
+    '<li><a href="/program_description">PROGRAMS</a></li>'+
     '<li><a href="/join">JOIN</a></li>'+
     '<li><a href="/rates">RATES</a></li>'+
     '<li><a href="/contact">CONTACT</a></li>'+
+    '<li class="dropdown">'+
+    '<a href="/gallery" data-toggle="dropdown" class="dropdown-toggle">Gallery <b class="caret"></b></a>'+
+    '<ul class="dropdown-menu" id="gallery">'+
+    '<li><a href="javascript:void(0)" onclick="IFrameScroll(\'/gallery/program-1/\')">Program-1</a></li>'+
+    '<li><a href="javascript:void(0)" onclick="IFrameScroll(\'/gallery/program-2/\')">Program-2</a></li>'+
+    '</ul>'+
+    '</li>'+
     '</ul>'+
     '</div>'+
-    '<!-- /.navbar-collapse -->'+
     '</div>'
 ;
 
@@ -65,11 +70,10 @@ document.getElementById("footer").innerHTML = '<div class="container">'+
     '</div>' +
     '</div>' +
     '</div>'+
-'<div class="col-lg-6 text-center">'+
-'<p style="text-align: center"> ' +
+    '<div class="col-lg-6 text-center">'+
+    '<p style="text-align: center"> ' +
     '&copy;  ' + new Date().getFullYear() + ' Feed Southern Africa. All rights reserved.' +
     '</p>'+
-'</div>'+
-
-'</div>'+
-'</div>';
+    '</div>'+
+    '</div>'+
+    '</div>';

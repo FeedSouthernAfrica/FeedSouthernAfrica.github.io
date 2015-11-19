@@ -1,0 +1,35 @@
+@import url("blueimp-gallery.min.css");
+
+body {
+    background: transparent;
+}
+.gallery {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    font-size:0
+}
+.gallery-list{
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    cursor:pointer;
+    width:15.83333%;
+}
+.gallery-list:nth-child(n){margin-bottom:1%;margin-right:1%}
+.gallery-list:nth-of-type(6n){margin-right:0;margin-bottom:0}
+.gallery-list .image{
+    background-size:cover;
+    background: #EEE center;
+    height:250px;
+}
+@media only screen and (max-width: 768px){
+    .gallery-list {width:48%}
+    .gallery-list .image{height:auto}
+}
+.gallery-box {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: transparent;
+}

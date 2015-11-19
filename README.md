@@ -9,6 +9,7 @@ FeedSouthernAfrica.github.io
 * CSS framework: [BootStrap](http://getbootstrap.com/)
 * JavaScript
 * HTML5
+* Blueimp - [Bootstrap-Image-Gallery](https://github.com/blueimp/Bootstrap-Image-Gallery)
 * [GitHub Pages](http://pages.github.com/)
 * [robots.txt](https://github.com/FeedSouthernAfrica/FeedSouthernAfrica.github.io/blob/master/robots.txt)
 
