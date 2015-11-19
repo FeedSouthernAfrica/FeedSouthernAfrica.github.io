@@ -54,8 +54,6 @@ document.getElementById("nav").innerHTML =
     '</div>'
 ;
 
-
-
 /* Footer */
 
 document.getElementById("footer").innerHTML = '<div class="container">'+
@@ -77,3 +75,9 @@ document.getElementById("footer").innerHTML = '<div class="container">'+
     '</div>'+
     '</div>'+
     '</div>';
+
+/* iframe loading function*/
+function IFrameScroll(link){
+    window.galleryIframe.location=link;
+    window.location.hash='galleryIframe'
+}
