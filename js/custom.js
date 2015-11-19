@@ -84,11 +84,11 @@ function IFrameScroll(link){
 
 
 document.getElementById('#program-1').click(function () {
+    frameElement.href="/gallery";
     IFrameScroll('/gallery/program-1/index.html');
-    return false;
 });
 
 document.getElementById('#program-2').click(function () {
+    frameElement.href="/gallery";
     IFrameScroll('/gallery/program-2/index.html');
-    return false;
 });
