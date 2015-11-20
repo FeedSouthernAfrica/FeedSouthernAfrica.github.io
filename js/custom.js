@@ -46,7 +46,7 @@ document.getElementById("nav").innerHTML =
     '<a href="/gallery" data-toggle="dropdown" class="dropdown-toggle">Gallery <b class="caret"></b></a>'+
     '<ul class="dropdown-menu" id="gallery">'+
     '<li><a href="/gallery" id="program-1" onclick="IFrameScroll(\'/gallery/program-1\')" >Program-1</a></li>'+
-    '<li><a href="javascript:void(0)" onclick="IFrameScroll(\'/gallery/program-2\')" target="galleryIframe">Program-2</a></li>'+
+    '<li><a href="/gallery/javascript:void(0)" onclick="IFrameScroll(\'/gallery/program-2\')" >Program-2</a></li>'+
     '</ul>'+
     '</li>'+
     '</ul>'+
