@@ -52,8 +52,8 @@ document.getElementById("nav").innerHTML =
     '<li class="dropdown">'+
     '<a href="/gallery" data-toggle="dropdown" class="dropdown-toggle">Gallery <b class="caret"></b></a>'+
     '<ul class="dropdown-menu" id="gallery">'+
-    '<li><a href="/gallery" id="program-1" $(document).ready("IFrameScroll(\'/gallery/program-1/index.html\')") >Program-1</a></li>'+
-    '<li><a href="/gallery" window.onload ="IFrameScroll(\'/gallery/program-2/index.html\')" >Program-2</a></li>'+
+    '<li><a href="/gallery" id="program-1" $(document).load(IFrameScroll(\'/gallery/program-1/index.html\')) >Program-1</a></li>'+
+    '<li><a href="/gallery" $(window).load(function(){ window.galleryIframe.location=\'/gallery/program-2/index.html\'; window.location.hash=\'galleryIframe\';) >Program-2</a></li>'+
     '</ul>'+
     '</li>'+
     '</ul>'+
