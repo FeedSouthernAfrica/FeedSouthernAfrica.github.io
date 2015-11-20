@@ -18,13 +18,6 @@ ga('create', 'UA-67287154-1', 'auto');
 ga('send', 'pageview');
 
 
-/* iframe loading function*/
-function IFrameScroll(link){
-    window.galleryIframe.location=link;
-    window.location.hash='galleryIframe';
-}
-
-
 /* Navigation bar */
 
 document.getElementById("nav").innerHTML =
@@ -49,12 +42,7 @@ document.getElementById("nav").innerHTML =
     '<li><a href="/join">JOIN</a></li>'+
     '<li><a href="/rates">RATES</a></li>'+
     '<li><a href="/contact">CONTACT</a></li>'+
-    '<li class="dropdown">'+
-    '<a href="/gallery" data-toggle="dropdown" class="dropdown-toggle">Gallery <b class="caret"></b></a>'+
-    '<ul class="dropdown-menu" id="gallery">'+
-    '<li><a href="/gallery" id="program-1" onclick= document.getElementById("/gallery/index.html#galleryIframe").src=\'/gallery/program-1/index.html\' >Program-1</a></li>'+
-    '<li><a href="/gallery" onclick= document.getElementById("galleryIframe").src=\'/gallery/program-1/index.html\' >Program-2</a></li>'+
-    '</ul>'+
+    '<li><a href="/gallery">Gallery</a></li>'+
     '</li>'+
     '</ul>'+
     '</div>'+
@@ -81,9 +69,3 @@ document.getElementById("footer").innerHTML = '<div class="container">'+
     '</div>'+
     '</div>'+
     '</div>';
-
-
-function ff(link){
-    (window).load(    document.getElementById("galleryIframe").src=link
-
-    )};
