@@ -4,9 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- @import url("gallery.css");
-
-
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/bg.jpg') no-repeat center center fixed;
@@ -236,19 +233,5 @@ footer {
         clear: both;
     }
 }
-
-.program-link {
-    text-decoration: none;
-    line-height: normal;
-}
-.program-link  a:link {color: #000;}
-.program-link  a:hover {color: forestgreen;}
-
 .center {text-align: center;}
 
-.gallery-iframe{
-    margin-bottom: 20px;
-    padding: 30px 15px;
-    width:100%;
-    height:800px;
-}

@@ -1,8 +1,5 @@
 @import url("blueimp-gallery.min.css");
 
-body {
-    background: transparent;
-}
 .gallery {
     margin:0px;
     padding:0px;
