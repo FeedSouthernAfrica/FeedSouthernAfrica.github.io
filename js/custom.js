@@ -18,13 +18,6 @@ ga('create', 'UA-67287154-1', 'auto');
 ga('send', 'pageview');
 
 
-/* iframe loading function*/
-function IFrameScroll(link){
-    window.galleryIframe.location=link;
-    window.location.hash='galleryIframe';
-}
-
-
 /* Navigation bar */
 
 document.getElementById("nav").innerHTML =
