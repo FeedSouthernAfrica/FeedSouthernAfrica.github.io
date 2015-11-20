@@ -18,6 +18,13 @@ ga('create', 'UA-67287154-1', 'auto');
 ga('send', 'pageview');
 
 
+/* iframe loading function*/
+function IFrameScroll(link){
+    window.galleryIframe.location=link;
+    window.location.hash='galleryIframe';
+}
+
+
 /* Navigation bar */
 
 document.getElementById("nav").innerHTML =
@@ -45,7 +52,7 @@ document.getElementById("nav").innerHTML =
     '<li class="dropdown">'+
     '<a href="/gallery" data-toggle="dropdown" class="dropdown-toggle">Gallery <b class="caret"></b></a>'+
     '<ul class="dropdown-menu" id="gallery">'+
-    '<li><a href="/gallery" id="program-1" window.onload ="IFrameScroll(\'/gallery/program-1/index.html\')" >Program-1</a></li>'+
+    '<li><a href="/gallery" id="program-1" $(document).ready("IFrameScroll(\'/gallery/program-1/index.html\')") >Program-1</a></li>'+
     '<li><a href="/gallery" window.onload ="IFrameScroll(\'/gallery/program-2/index.html\')" >Program-2</a></li>'+
     '</ul>'+
     '</li>'+
@@ -76,22 +83,4 @@ document.getElementById("footer").innerHTML = '<div class="container">'+
     '</div>'+
     '</div>';
 
-/* iframe loading function*/
-function IFrameScroll(link){
-    window.galleryIframe.location=link;
-    window.location.hash='galleryIframe';
-}
 
-
-function ff(id, link){
-$(window).load(function() {
-    $(id).click(function() {
-        $('galleryIframe').load(function() {
-            IFrameScroll(id, link);
-        });
-    });
-});}
-/*
-<iframe name="iframe_a" id="iframe_a"></iframe>
-    <a href="http://www.example.com/" target="iframe_a" id="iframe_trigger">Go!</a>
-    */
